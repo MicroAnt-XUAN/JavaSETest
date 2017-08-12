@@ -1,4 +1,4 @@
-package com.hand.JavaSETest;
+﻿package com.hand.JavaSETest;
 
 import java.util.Scanner;
 
@@ -8,12 +8,12 @@ public class Test_01 {
 		Scanner scan=new Scanner(System.in);
 		double sal=0.00;  //工资、薪金所得
 		double sf=0.00;   //应当缴纳的税费
-		scan.close();
 		try {
 			sal=scan.nextDouble();
 		} catch (Exception e) {
 			System.out.println("您输入的格式有误");
 		}
+		scan.close();
 		if(sal>3500){
 			if(sal>80000){
 				sf=(sal-80000)*0.45+80000*0.35+55000*0.30+35000*0.25+9000*0.20+4500*0.1+1500*0.03;
